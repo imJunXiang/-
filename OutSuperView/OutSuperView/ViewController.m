@@ -20,15 +20,16 @@
     JXView *view = [[JXView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
     view.center = self.view.center;
     view.backgroundColor = [UIColor orangeColor];
+//    view.hidden = YES;
+//    view.userInteractionEnabled = NO;
     
     UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 200, 200)];
-    btn.hidden = YES;
+//    btn.hidden = YES;
     btn.backgroundColor = [UIColor yellowColor];
     [btn addTarget:self action:@selector(clickBtn:) forControlEvents:UIControlEventTouchUpInside];
     [view addSubview:btn];
     
     UIButton *btn2 = [[UIButton alloc] initWithFrame:CGRectMake(-100, -100, 200, 200)];
-//        btn.hidden = YES;
     btn2.backgroundColor = [UIColor yellowColor];
     [btn2 addTarget:self action:@selector(clickBtn:) forControlEvents:UIControlEventTouchUpInside];
     [view addSubview:btn2];
